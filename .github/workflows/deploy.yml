@@ -41,6 +41,7 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        continue-on-error: true
 
       - name: Upload build files
         uses: actions/upload-pages-artifact@v3
