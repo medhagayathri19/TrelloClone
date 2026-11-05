@@ -1,8 +1,6 @@
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || (
-  window.location.port === '5173' ? 'http://localhost:5000' : window.location.origin
-);
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://trelloclone-backend.onrender.com';
 
 export const socket = io(SOCKET_URL, {
   autoConnect: true,
